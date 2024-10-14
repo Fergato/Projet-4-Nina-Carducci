@@ -8,7 +8,13 @@
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<link rel="preload" as="image" href="./assets/images/slider/homme-passage-pietons.webp">
+	<link rel="preload" as="image" href="./assets/images/slider/foule-acclamant-artiste.webp">
+	<!-- <link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"> -->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
 	<title>Nina Carducci - Photographe à Bordeaux</title>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -23,7 +29,7 @@
 			"name": "Nina Carducci",
 			"telephone": "05 56 67 78 89"
 			"description": "Photographe professionnelle à Bordeaux",
-			"image": "https://nina-carducci.github.io/assets/images/nina.png",
+			"image": "https://nina-carducci.github.io/assets/images/nina.webp",
 			"address" {
 				@"type": "PostalAdress",
 				"addressCountry": "FR",
@@ -41,16 +47,16 @@
 	<meta property="og:title" content="Nina Carducci- Photographe professionnelle à Bordeaux">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://nina-carducci.github.io/">
-	<meta property="og:image" content="https://nina-carducci.github.io/assets/images/nina.png">
+	<meta property="og:image" content="https://nina-carducci.github.io/assets/images/nina.webp">
 	<meta property="og:description" content="Nina Carducci, photographe à Bordeaux. Spécialisée dans l'évenementiel: mariages, concerts, entreprises ainsi que dans le portrait photo. Immortalisez ces moments précieux grâce à mon regard, mon approche et ma technique.">
 	<meta property="og:locale" content="fr_FR">
 	<meta name="pinterest-rich-pin" content="true">
 
 				<!-- Twitter Cards -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Nina Carducci Photographe professionnelle à Bordeaux"
+	<meta name="twitter:title" content="Nina Carducci Photographe professionnelle à Bordeaux">
 	<meta name="twitter:description" content="Nina Carducci, photographe à Bordeaux. Spécialisée dans l'évenementiel: mariages, concerts, entreprises ainsi que dans le portrait photo. Immortalisez ces moments précieux grâce à mon regard, mon approche et ma technique.">
-	<meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.png">
+	<meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.webp">
 
 </head>
 <body>
@@ -76,13 +82,13 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/homme-passage-pietons.jpg" class="d-block w-100" alt="Homme marchant sur un passage piétons.">
+				<img src="./assets/images/slider/homme-passage-pietons.webp" class="d-block w-100" alt="Homme marchant sur un passage piétons.">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/foule-acclamant-artiste.jpg" class="d-block w-100" alt="Foule acclamant l'artiste.">
+				<img src="./assets/images/slider/foule-acclamant-artiste.webp" class="d-block w-100" alt="Foule acclamant l'artiste.">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/maries-embrassant-bal.jpg" class="d-block w-100" alt="Deux mariés s'embrassant à un bal.">
+				<img src="./assets/images/slider/maries-embrassant-bal.webp" class="d-block w-100" alt="Deux mariés s'embrassant à un bal.">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -98,7 +104,7 @@
 </header>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.png" alt="Photo de Nina Carducci">
+		<img src="./assets/images/nina.webp" alt="Photo de Nina Carducci">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -111,15 +117,15 @@
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/photo-concert-foule.jpg" alt="Photo d'une salle de concert dans la foule"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/businessman-en-costume.jpg" alt="businessman en costume"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/femmes-bureau-souriantes.jpg" alt="deux femmes souriantes au bureau"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/mains-maries.jpg" alt="photo des mains des mariés se tenant les mains"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait-homme-yeux-fermes.jpg" alt="portrait photo d'un homme aux yeux fermés"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/couple-souriant.jpg" alt="Photo d'un couple souriant à leur mariage"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait-femme.jpg" alt="Portrait photo d'une femme"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/chanteur-sur-scene.jpg" alt="Photo d'un chanteur sur scène"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/femme-riant-bureau.jpg" alt="Femme riant au bureau"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/photo-concert-foule.webp" alt="Photo d'une salle de concert dans la foule"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/businessman-en-costume.webp" alt="businessman en costume"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/femmes-bureau-souriantes.webp" alt="deux femmes souriantes au bureau"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/mains-maries.webp" alt="photo des mains des mariés se tenant les mains"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait-homme-yeux-fermes.webp" alt="portrait photo d'un homme aux yeux fermés"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/couple-souriant.webp" alt="Photo d'un couple souriant à leur mariage"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait-femme.webp" alt="Portrait photo d'une femme"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/chanteur-sur-scene.webp" alt="Photo d'un chanteur sur scène"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/femme-riant-bureau.webp" alt="Femme riant au bureau"/>
 		</div>
 	</div>
 	<div class="quote">
@@ -191,7 +197,7 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.png" alt="Photo d'un appareil photo">
+			<img src="./assets/images/camera.webp" alt="Photo d'un appareil photo">
 		</div>
 	</div>
 </div>
